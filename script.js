@@ -7,5 +7,7 @@ function imgchange2() {
 }
 
 function redirectToURL(url) {
-    window.location.href = url;
+    if (document.getElementById('logo').src.includes('tea.png')) {
+        window.location.href = url;
+    }
 }
