@@ -1,7 +1,11 @@
-function changeURL() {
-    document.getElementById('inuhenkou').src = '新しい画像のURL'; // ここに新しい画像のURLを指定
+function imgchange1() {
+    document.getElementById('logo').src = './image/bakuhatsu.png';
 }
 
-function restoreImage() {
-    document.getElementById('inuhenkou').src = './image/inu1.jpg';
+function imgchange2() {
+    document.getElementById('logo').src = './image/bakudan.png';
+}
+
+function redirectToURL(url) {
+    window.location.href = url;
 }
