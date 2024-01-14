@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>画像変更と復元</title>
+    <title>画像変更とリダイレクト</title>
 </head>
 <body>
 
-<h1>練習問題6-14 3秒経ったら画像が戻る</h1>
-<img src='./image/inu1.jpg' id="inuhenkou" alt="wanwano">
-<form name="timer14">
-    <input type="button" value="スタート" onclick="changeURL(); setTimeout('restoreImage()', 3000)">
-</form>
+<h1>練習問題6-10</h1>
+
+<input type="button" value="画像変更" onclick="imgchange1();">
+<input type="button" value="元に戻す" onclick="imgchange2();">
+<img src="./image/bakudan.png" id="logo" alt="オフ" class="imagechange" onclick="redirectToURL('https://www.example.com')">
 
 <script src="script.js"></script>
 
