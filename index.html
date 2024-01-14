@@ -3,40 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>私のブログ</title>
+    <title>画像変更と復元</title>
 </head>
 <body>
-    <header>
-        <h1>私のブログへようこそ</h1>
-    </header>
 
-    <main>
-        <article>
-            <h2>自然の不思議を探る</h2>
-            <p class="meta">2023年8月15日に投稿</p>
-            <img src="nature.jpg" alt="自然の画像">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dapibus elit.
-                Nullam eget turpis a quam luctus convallis. Proin at scelerisque orci.
-            </p>
-        </article>
+<h1>練習問題6-14 3秒経ったら画像が戻る</h1>
+<img src='./image/inu1.jpg' id="inuhenkou" alt="wanwano">
+<form name="timer14">
+    <input type="button" value="スタート" onclick="changeURL(); setTimeout('restoreImage()', 3000)">
+</form>
 
-        <article>
-            <h2>料理冒険：料理の旅</h2>
-            <p class="meta">2023年8月20日に投稿</p>
-            <img src="cooking.jpg" alt="料理の画像">
-            <p>
-                Curabitur dapibus, libero ut suscipit tincidunt, felis augue rhoncus ligula,
-                vel tincidunt justo velit in justo.
-            </p>
-        </article>
-    </main>
+<script src="script.js"></script>
 
-    <footer>
-        <p>&copy; 2023 私のブログ。全著作権所有。</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
